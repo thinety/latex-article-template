@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{thinetycore}
-  [2019/06/08 v0.01 Core functionality LaTeX package for my own purpose]
+  [2019/06/21 v0.02 Core functionality LaTeX package for my own purpose]
 
 
 
@@ -22,6 +22,11 @@
 %\hyphenation{mate-mática recu-perar}
 %--------------------------------------
 
+
+%For custom margins, sometimes needed
+%--------------------------------------
+%\RequirePackage[margin=1in]{geometry}
+%--------------------------------------
 
 %Extended support for images, contained in folder ./images/
 %--------------------------------------
@@ -54,8 +59,20 @@
 
 %For the title page
 %--------------------------------------
-\title{Base files}
-\author{Thiago Trannin %\thanks{ }
-        }
+\title{\textbf{Título em negrito}\\
+       \large \textit{Subtítulo em itálico}\thanks{Nota sobre o subtítulo}}
+\author{Autor 1\thanks{Filiação 1}\\
+        \texttt{e@mail.1}
+        \and
+        Autor 2\thanks{Filiação 2}\\
+        \texttt{e@mail.2}
+        \and
+        Autor 3\footnotemark[2]\\
+        \texttt{e@mail.3}}
 \date{\today}
+%--------------------------------------
+
+%Uncomment this if you want no page numbering
+%--------------------------------------
+%\pagenumbering{gooble}
 %--------------------------------------

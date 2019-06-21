@@ -1,13 +1,27 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{thinetymath}
-  [2019/06/08 v0.01 Math addendums LaTeX package for my own purpose]
+  [2019/06/21 v0.02 Math addendums LaTeX package for my own purpose]
 
 
 
 %For obvious reasons
 %--------------------------------------
 \RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
 %--------------------------------------
+
+%Used, among others, to box equations in environments like align with \Aboxed
+%Technically, you don't need amsmath if you load this package
+%--------------------------------------
+%\RequirePackage{mathtools}
+%--------------------------------------
+
+%To allow page breaks inside environments like align
+%--------------------------------------
+\allowdisplaybreaks
+%--------------------------------------
+
 
 %Declaring useful commands
 %--------------------------------------
